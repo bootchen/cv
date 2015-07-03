@@ -65,7 +65,7 @@ textarea {
   Typography
 */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family:  'Lato', sans-serif;
     font-weight: 900;
 }
@@ -80,6 +80,7 @@ h2 {
 h3 {
     font-style: italic;
     margin-top: 0;
+    color:#ED6300;
 }
 
 p, li {
@@ -105,12 +106,44 @@ body {
     border-top: 5px solid #47E967;
 }
 
+.masterhead h3{
+    color: #47E967;
+}
+
+.l-cv-section h5{
+    color: #47E967;
+}
+
+.l-studies h5{
+    color: #47E967;
+}
+
+.l-studies h3{
+    color: #19161A;
+}
+
+.l-and h3{
+    color:#47E967;
+}
+
+.l-date p {
+    margin-top: 4px;
+}
+
+
 
 /*
   Layout
 */
+
+
+
 .row {
     max-width: 100%;
+}
+
+.l-cv--section .row {
+    margin-bottom: 2em;
 }
 
 .photo {
@@ -121,8 +154,20 @@ body {
 }
 
 .photo:hover {
-  transform: rotate(-10deg);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
 }
+
+.header-contact:hover {
+    transform: rotate(+5deg);
+}
+
+.tittle { transition: all .2s ease-in-out; }
+.tittle:hover { transform: scale(1.1); }
 
 .masterhead {
     background-color: #19161A;
@@ -132,13 +177,42 @@ body {
     margin: 2em 0;
 }
 
-.l-date p {
-    margin-top: 4px;
-}
-
 .l-footer {
 text-align: center;
+background-color: #19161A;
+color: #FAF6FB;
+padding-bottom: 1em;
 }
+
+
+
+/*
+  icones
+*/
+
+
+
+.fa-size {
+    font-size: 32px;
+}
+
+.fa-star-half-o{
+color: #ED6300;
+}
+
+.fa-envelope-square{
+    color:#ED6300;
+}
+
+.fa-phone-square{
+    color:#ED6300;
+}
+
+.fa-laptop{
+    color:#ED6300;
+}
+
+
 
 /* ==========================================================================
    Media Queries
